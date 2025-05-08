@@ -7,6 +7,8 @@
   --white: #FFF;
 
   --time: ease-in-out 0.25s;
+  --container-width: 830px;
+  --yelow: #FFC002;
 }
 
 html {
@@ -35,6 +37,7 @@ body {
   font-weight: 500;
   font-size: 1.8rem;
   line-height: normal;
+  letter-spacing: 0.01rem;
   @include stylized-scrollbar();
   -webkit-tap-highlight-color: transparent;
   @include breakpoint(md) {
@@ -46,9 +49,11 @@ body.bx-panel {
   .main {
     top: 14.7rem;
   }
+
   .header {
     top: 14.7rem;
   }
+
   .footer {
     top: 14.7rem;
   }
@@ -58,9 +63,11 @@ body.bx-panel.bx-panel-collapsed {
   .main {
     top: 3.9rem;
   }
+
   .header {
     top: 3.9rem;
   }
+
   .footer {
     top: 3.9rem;
   }
@@ -70,12 +77,15 @@ body.bx-panel-fixed {
   .main {
     top: 14.7rem;
   }
+
   .header {
     top: 14.7rem;
   }
+
   .header-small {
     top: 14.7rem;
   }
+
   .footer {
     top: 14.7rem;
   }
@@ -85,12 +95,15 @@ body.bx-panel-fixed.bx-panel-collapsed {
   .main {
     top: 3.9rem;
   }
+
   .header {
     top: 3.9rem;
   }
+
   .header-small {
     top: 3.9rem;
   }
+
   .footer {
     top: 3.9rem;
   }
@@ -142,6 +155,7 @@ ul {
   margin-inline-start: 0;
   margin-inline-end: 0;
   padding-inline-start: 0;
+
   li {
     display: block;
     list-style: none;
@@ -159,6 +173,7 @@ img {
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+
   &::before,
   &::after {
     box-sizing: border-box;
@@ -169,6 +184,7 @@ input {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 1.6rem;
+
   &::placeholder {
     font-weight: 300;
   }
@@ -182,6 +198,7 @@ input::-webkit-inner-spin-button {
 textarea {
   font-family: var(--font-family);
   padding-top: 0.5rem;
+
   &::placeholder {
     font-family: var(--font-family);
   }
@@ -196,10 +213,7 @@ button {
   border-radius: 0.5rem;
   cursor: pointer;
   transition: var(--time);
-  &:hover {
-    color: var(--white);
-    background-color: var(--text);
-  }
+  background: none;
 }
 
 .page-text {
@@ -252,6 +266,12 @@ button {
 .disabled {
   opacity: 0.5;
   pointer-events: none;
+}
+
+.container {
+  width: 830px;
+  margin: 0 auto;
+  max-width: 95%;
 }
 
 @include breakpoint(md) {
