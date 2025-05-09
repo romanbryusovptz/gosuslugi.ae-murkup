@@ -3,16 +3,16 @@
 .footer {
   background-color: var(--dark);
   color: var(--white);
-  font-size: 10px;
-  line-height: 150%;
+  font-size: 1.3rem;
   &__inner {
-    width: 810px;
+    width: var(--container-width);
+    padding: 0 1.5rem;
     max-width: 95%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height:87.5px;
+    height:11.3rem;
   }
   &__copyright {
     font-weight: 400;
@@ -20,20 +20,81 @@
   &__nav {
     &-list {
       display: flex;
-      gap: 25px;
+      gap: 3.2rem;
       font-weight: 700;
     }
   }
   &__socials {
     &-list {
       display: flex;
-      gap: 12.5px
+      gap: 1.6rem
     }
     &-item {
-      width: 31.25px;
-      height: 31.25px;
+      width: 4.2rem;
+      height: 4.2rem;
       background-color:  rgba(255, 255, 255, 0.05);
-      border-radius: 6.25px;
+      border-radius: 1rem;
+    }
+  }
+}
+
+@include breakpoint(lg) {
+  .footer {
+    font-size: 1rem;
+
+    &__inner {
+      width: var(--container-width-md);
+      padding: 0 1rem;
+      height:8.75rem;
+    }
+    &__nav {
+      &-list {
+        gap: 2.5rem;
+      }
+    }
+    &__socials {
+      &-list {
+        gap: 1.25rem
+      }
+      &-item {
+        width: 3.125rem;
+        height: 3.125rem;
+        border-radius: 0.625rem;
+      }
+    }
+  }
+}
+
+@include breakpoint(md) {
+  .footer {
+    font-size: 1.4rem;
+    &__inner {
+      flex-direction: column;
+      gap: 2rem;
+      padding: 2rem;
+      height: unset;
+    }
+    &__copyright {
+      order: 3;
+    }
+    &__nav {
+      &-list {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        row-gap: 1.5rem;
+        column-gap: 3rem;
+      }
+    }
+    &__socials {
+      &-list {
+        gap: 1.75rem
+      }
+      &-item {
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 1rem;
+      }
     }
   }
 }

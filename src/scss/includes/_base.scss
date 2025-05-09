@@ -8,20 +8,14 @@
   --dark: #1A1C1E;
 
   --time: ease-in-out 0.25s;
-  --container-width: 830px;
+  --container-width: 1170px;
+  --container-width-md: 830px;
 }
 
 html {
   -webkit-text-size-adjust: 100%;
-  font-size: clamp(4px, 0.495vw, 10px);
-  scroll-behavior: smooth;
-  @include breakpoint(md) {
-    font-size: clamp(4px, 1.302vw, 10px);
-  }
-  @include breakpoint(sm) {
-    font-size: 10px;
-    line-height: 1.2;
-  }
+  font-size: 10px;
+  line-height: 150%;
 }
 
 body {
