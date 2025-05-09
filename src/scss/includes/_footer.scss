@@ -1,6 +1,38 @@
 @use './mixins' as *;
 
 .footer {
-  height:60px;
   background-color: var(--dark);
+  color: var(--white);
+  font-size: 10px;
+  line-height: 150%;
+  &__inner {
+    max-width: 810px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:87.5px;
+  }
+  &__copyright {
+    font-weight: 400;
+  }
+  &__nav {
+    &-list {
+      display: flex;
+      gap: 25px;
+      font-weight: 700;
+    }
+  }
+  &__socials {
+    &-list {
+      display: flex;
+      gap: 12.5px
+    }
+    &-item {
+      width: 31.25px;
+      height: 31.25px;
+      background-color:  rgba(255, 255, 255, 0.05);
+      border-radius: 6.25px;
+    }
+  }
 }
