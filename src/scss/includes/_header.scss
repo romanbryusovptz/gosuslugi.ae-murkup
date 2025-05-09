@@ -3,6 +3,17 @@
 .header {
   box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.05);
   background: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.3s ease;
+  &_hidden {
+    margin-top: -120px;
+  }
+  &_scroll {
+    margin-top: -56px;
+  }
 }
 
 .header-up {
