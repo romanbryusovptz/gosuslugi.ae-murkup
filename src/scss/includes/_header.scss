@@ -176,7 +176,8 @@
         background: var(--white);
         box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.16);
         & ul li a {
-          display: block;
+          display: flex;
+          align-items: center;
           padding: 5.62px 14.5px;
 
           transition: var(--time);
@@ -185,11 +186,21 @@
           &:hover {
             color: var(--primary);
           }
+          & img {
+            width: 30px;
+            min-width: 30px;
+            display: inline;
+            padding-right: 10px;
+          }
+        }
+        & ul li.header-down__nav-sub-item_has-children a {
+          padding-right: 35px;
         }
       }
     }
     &-sub-item {
-      position: relative;
+      font-size: 12px;
+
       &:hover
       {
         >.header-down__nav-dropdown {
@@ -199,6 +210,7 @@
       }
       &_has-children>a {
         position: relative;
+
       }
       &_has-children>a::after {
         content: '';
@@ -222,7 +234,7 @@
       left: calc(100% - 20px);
       top: 0;
       z-index: -1;
-
+      height: 100%;
       &-wrapper {
         height: 100%;
         padding-left: 25px;
