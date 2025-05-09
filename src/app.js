@@ -1,6 +1,7 @@
-import { initSmoothScroll } from './js/smooth-scroll'
-import { initSmoothScrollToElement } from './js/smooth-scroll-to-element'
+import {initSmoothScroll} from './js/smooth-scroll'
+import {initSmoothScrollToElement} from './js/smooth-scroll-to-element'
 import {scrollHeader} from "./js/scroll-header.js";
+import {mobileHeader} from "./js/mobile-header.js";
 
 import './scss/app.scss'
 
@@ -10,4 +11,5 @@ window.initSmoothScroll = initSmoothScroll
 window.addEventListener('DOMContentLoaded', () => {
     initSmoothScroll();
     scrollHeader();
+    mobileHeader();
 })

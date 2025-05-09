@@ -1,8 +1,8 @@
 export function scrollHeader() {
     let tempScrollTop = 0;
     let currentScrollTop = window.scrollY;
-    let header = document.querySelector('.header');
-    let headerUp = document.querySelector('.header-up');
+    let header = document.querySelector('.js-header');
+    let headerUp = document.querySelector('.js-header-up');
     if(header) {
         window.addEventListener('scroll', function() {
             let currentScrollTop = window.scrollY;
