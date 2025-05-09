@@ -5,10 +5,10 @@
 
   --primary: #FFC002;
   --white: #FFF;
+  --dark: #1A1C1E;
 
   --time: ease-in-out 0.25s;
   --container-width: 830px;
-  --yelow: #FFC002;
 }
 
 html {
@@ -44,7 +44,9 @@ body {
     font-size: 1.4rem;
   }
 }
-
+.main {
+  flex-grow: 1;
+}
 body.bx-panel {
   .main {
     top: 14.7rem;
@@ -184,6 +186,7 @@ input {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 1.6rem;
+  outline: none;
 
   &::placeholder {
     font-weight: 300;

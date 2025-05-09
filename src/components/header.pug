@@ -15,23 +15,51 @@ header.header
                         div.header-up__contacts-item-text
                             a.header-up__contacts-item-link(href="+971521730911") +971 52 1730911
                             a.header-up__contacts-item-link(href="mailto:info@gosuslugi.ae") info@gosuslugi.ae
-                a.header-up__contacts-button(href='#', target='_blank')
-                    svg(width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg")
-                        use(href="/assets/svg/sprite.svg#social-watsapp")
-                    span Написать в WhatsApp
+                div.header-up__contacts-buttons
+                    a.header-up__contacts-button(href='#', target='_blank')
+                        svg(width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            use(href="/assets/svg/sprite.svg#social-watsapp")
+                        span Написать в WhatsApp
     section.header-down
         div.header-down__inner
-            nav.header-down__menu
-                ul.header-down__menu-list
-                    li.header-down__menu-item.header-down__menu-item_has-children
+            nav.header-down__nav
+                ul.header-down__nav-list
+                    li.header-down__nav-item.header-down__nav-item_has-children
                         a(href="/pages/services.html") Услуги
-                    li.header-down__menu-item
+                        div.header-down__nav-dropdown
+                            div.header-down__nav-dropdown-wrapper
+                                ul
+                                    li.header-down__nav-sub-item.header-down__nav-sub-item_has-children
+                                        a(href="/pages/services_section.html") Визы и резиденство
+                                        div.header-down__nav-dropdown
+                                            div.header-down__nav-dropdown-wrapper
+                                                ul
+                                                    li.header-down__nav-sub-item
+                                                        a(href="/pages/service.html") Виза удаленщика
+                                                    li.header-down__nav-sub-item
+                                                        a(href="/pages/service.html") Виза инвестора
+                                    li.header-down__nav-sub-item.header-down__nav-sub-item_has-children
+                                        a(href="/pages/services_section.html") Банковские услуги
+                                        div.header-down__nav-dropdown
+                                            div.header-down__nav-dropdown-wrapper
+                                                ul
+                                                    li.header-down__nav-sub-item
+                                                        a(href="/pages/service.html") Виза удаленщика
+                                                    li.header-down__nav-sub-item
+                                                        a(href="/pages/service.html") Виза инвестора
+                                    li.header-down__nav-sub-item
+                                        a(href="/pages/services_section.html") Открытие бизнеса
+                                    li.header-down__nav-sub-item
+                                        a(href="/pages/services_section.html") Судебные вопросы
+                                    li.header-down__nav-sub-item
+                                        a(href="/pages/services_section.html") Операции с недвижимостью
+                    li.header-down__nav-item
                         a(href="/pages/about.html") О проекте
-                    li.header-down__menu-item
+                    li.header-down__nav-item
                         a(href="/pages/articles.html") Справочная
-                    li.header-down__menu-item
+                    li.header-down__nav-item
                         a(href="/pages/contacts.html") Контакты
-                    li.header-down__menu-item
+                    li.header-down__nav-item
                         a(href="/pages/contacts.html") Партнерство
             div.header-down__search
                 form.header-down__search-form
