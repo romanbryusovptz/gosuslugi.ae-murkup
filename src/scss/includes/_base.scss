@@ -37,7 +37,7 @@ body {
   font-weight: 500;
   font-size: 1.8rem;
   line-height: normal;
-  letter-spacing: 0.01rem;
+  letter-spacing: 0.01em;
   @include stylized-scrollbar();
   -webkit-tap-highlight-color: transparent;
   @include breakpoint(md) {
@@ -47,6 +47,32 @@ body {
 .main {
   flex-grow: 1;
 }
+
+.yellow-text {
+  color: var(--primary);
+}
+
+.yellow-bg-text
+{
+
+  background: var(--primary);
+  padding: 0 5px;
+  border-radius: 0.8rem;
+  color: var(--dark);
+
+}
+.btn {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 1.3rem 5.2rem;
+  border-radius: 1rem;
+  max-width: max-content;
+
+  &_yellow {
+    background: var(--primary);
+  }
+}
+
 body.bx-panel {
   .main {
     top: 14.7rem;

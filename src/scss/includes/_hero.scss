@@ -1,0 +1,47 @@
+.hero {
+  min-height: 43rem;
+
+  &__inner {
+    width: var(--container-width);
+    max-width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  &__title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 120%;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    font-weight: 300;
+    max-width: 46.4rem;
+  }
+
+  &_bg &__content {
+    width: 59.5rem;
+    margin-top: 5.55rem;
+  }
+
+  &_bg &__text {
+    color: #939393;
+    margin-bottom: 2.4rem;
+  }
+
+  &_bg {
+    min-height: 40rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-top: 1.2rem;
+  }
+}
