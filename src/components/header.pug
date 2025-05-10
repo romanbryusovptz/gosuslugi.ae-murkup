@@ -3,23 +3,23 @@ header.header.js-header
         div.header-up__inner
             div.header-up__logo
                 img(src='/assets/images/logo.png', alt='Госуслуги.ae')
-            div.header-up__contacts
-                div.header-up__contacts-items
-                    div.header-up__contacts-item
-                        svg.header-up__contacts-item-icon(width="14" height="14" viewBox='0 0 14 14', fill='none', xmlns='http://www.w3.org/2000/svg')
-                            use(href="/assets/svg/sprite.svg#location")
-                        div.header-up__contacts-item-text Dubai, United Arab Emirates, Оffice 303, Control Tower
-                    div.header-up__contacts-item
-                        svg.header-up__contacts-item-icon(width="13" height="14" viewBox='0 0 13 14', fill='none', xmlns='http://www.w3.org/2000/svg')
-                            use(href="/assets/svg/sprite.svg#book")
-                        div.header-up__contacts-item-text
-                            a.header-up__contacts-item-link(href="+971521730911") +971 52 1730911
-                            a.header-up__contacts-item-link(href="mailto:info@gosuslugi.ae") info@gosuslugi.ae
-                div.header-up__contacts-buttons
-                    a.header-up__contacts-button(href='#', target='_blank')
-                        svg(width="14" height="14"  viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg")
-                            use(href="/assets/svg/sprite.svg#social-watsapp")
-                        span Написать в WhatsApp
+            div.header-up__right
+                div.header-up__contacts
+                    div.header-up__contacts-items
+                        div.header-up__contacts-item
+                            svg.header-up__contacts-item-icon(width="14" height="14" viewBox='0 0 14 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                use(href="/assets/svg/sprite.svg#location")
+                            div.header-up__contacts-item-text Dubai, United Arab Emirates, Оffice 303, Control Tower
+                        div.header-up__contacts-item
+                            svg.header-up__contacts-item-icon(width="13" height="14" viewBox='0 0 13 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                use(href="/assets/svg/sprite.svg#book")
+                            div.header-up__contacts-item-text
+                                a.header-up__contacts-item-link(href="+971521730911") +971 52 1730911
+                                a.header-up__contacts-item-link(href="mailto:info@gosuslugi.ae") info@gosuslugi.ae
+                div.header-up__search
+                    form.header-up__search-form
+                        input.header-up__search-form-input(placeholder="Что вы ищете?")
+                        buttont.header-up__search-form-submit(type="submit") Искать
             div.header-up__burger.js-burger
                 div.header-up__burger-item
     section.header-down
@@ -107,14 +107,14 @@ header.header.js-header
                             a.header-down__contacts-item-link(href="mailto:info@gosuslugi.ae") info@gosuslugi.ae
 
                 div.header-down__contacts-buttons
-                    a.header-down__contacts-button(href='#', target='_blank')
+                    a.header-down__contacts-button.header-down__contacts-button_wa(href='#', target='_blank')
                         svg(width="14" height="14"  viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg")
                             use(href="/assets/svg/sprite.svg#social-watsapp")
                         span Написать в WhatsApp
-                    a.header-down__contacts-button(href='#', target='_blank')
-                        svg(width="14" height="14"  viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg")
-                            use(href="/assets/svg/sprite.svg#social-watsapp")
-                        span Написать в WhatsApp
+                    a.header-down__contacts-button.header-down__contacts-button_tg(href='#', target='_blank')
+                        svg(width="13" height="12"  viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            use(href="/assets/svg/sprite.svg#social-telegram")
+                        span Написать в Telegram
             div.header-down__search
                 form.header-down__search-form
                     input.header-down__search-form-input(placeholder="Что вы ищете?")
