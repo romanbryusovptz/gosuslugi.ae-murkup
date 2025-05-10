@@ -211,6 +211,7 @@
         opacity: 0;
         z-index: 10;
         pointer-events: none;
+        font-weight: 400;
 
         &-wrapper {
           padding: 0.8rem 0;
@@ -222,7 +223,7 @@
           & ul li a {
             display: flex;
             align-items: center;
-            padding: 0.562rem 1.4rem;
+            padding: 0.562rem 1.2rem;
             transition: var(--time);
             cursor: pointer;
             white-space: nowrap;
@@ -247,6 +248,7 @@
       }
 
       &-sub-item {
+        position: relative;
         &:hover {
           > .header-down__nav-dropdown {
             opacity: 1;
@@ -283,9 +285,8 @@
         top: 0;
         z-index: -1;
         height: 100%;
-
+        padding-top: 0;
         &-wrapper {
-          height: 100%;
           padding-left: 2.5rem;
         }
       }
