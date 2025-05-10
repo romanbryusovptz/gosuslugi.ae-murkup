@@ -11,10 +11,6 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         home: resolve(__dirname, './pages/home.html'),
-      },
-      output: {
-        assetFileNames: 'assets/[name].css',
-        chunkFileNames: 'assets/[name].js'
       }
     }
   },
