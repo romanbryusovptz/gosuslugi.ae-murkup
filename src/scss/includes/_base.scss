@@ -174,7 +174,10 @@ img {
   display: block;
   max-width: 100%;
 }
-
+svg {
+  width: 14px;
+  height: 14px;
+}
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
