@@ -29,8 +29,12 @@
     @media only screen and (max-width: 768px) {
       @content;
     }
-  } @else if $point == lg {
+  } @else if $point == xl {
     @media only screen and (max-width: 1200px) {
+      @content;
+    }
+  } @else if $point == xxl {
+    @media only screen and (max-width: 1441px) {
       @content;
     }
   } @else {

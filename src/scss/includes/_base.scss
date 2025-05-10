@@ -8,14 +8,20 @@
   --dark: #1A1C1E;
 
   --time: ease-in-out 0.25s;
-  --container-width: 1170px;
-  --container-width-md: 830px;
+  --container-width: 83rem;;
+  --container-width-md: 83rem;
 }
 
 html {
   -webkit-text-size-adjust: 100%;
-  font-size: 10px;
+  font-size: 13px;
   line-height: 150%;
+  @include breakpoint(xxl) {
+    font-size: 11.45px;
+  }
+  @include breakpoint(xl) {
+    font-size: 10px;
+  }
 }
 
 body {

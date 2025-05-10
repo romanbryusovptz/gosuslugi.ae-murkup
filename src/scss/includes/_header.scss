@@ -10,18 +10,18 @@
   transition: all 0.3s ease;
 
   &_hidden {
-    margin-top: -15.3rem;
+    margin-top: -11.9rem;
   }
 
   &_scroll {
-    margin-top: -7.01rem;
+    margin-top: -5.51rem;
   }
 
   &-up {
     border-bottom: 1px solid #E4E6E8;
 
     &__inner {
-      height: 7rem;
+      height: 5.5rem;
       width: var(--container-width);
       max-width: 95%;
       margin: 0 auto;
@@ -31,7 +31,7 @@
     }
 
     &__logo {
-      max-width: 17rem;
+      max-width: 14.5rem;
       display: block;
 
       & img {
@@ -40,26 +40,26 @@
     }
 
     &__contacts {
-      font-size: 1.3rem;
+      font-size: 1rem;
       letter-spacing: 0.01rem;
       display: flex;
       justify-content: space-between;
-      width: 68rem;
+      width: 53rem;
 
       &-items {
         display: flex;
         justify-content: space-between;
-        gap: 3.9rem;
+        gap: 3rem;
       }
 
       &-item {
         font-weight: 300;
         display: flex;
-        gap: 1.3rem;
+        gap: 1rem;
         align-items: center;
 
         &-text {
-          max-width: 20rem;
+          max-width: 13.6rem;
           color: #1A1C1E;
         }
 
@@ -90,8 +90,8 @@
         font-weight: 700;
         color: #2CB742;
         cursor: pointer;
-        height: 4.5rem;
-        gap: 1rem;
+        height: 3rem;
+        gap: 0.6rem;
         align-items: center;
 
         &:hover {
@@ -100,8 +100,8 @@
       }
 
       & svg {
-        width: 1.8rem;
-        height: 1.8rem;
+        width: 1.4rem;
+        height: 1.4rem;
       }
     }
 
@@ -112,9 +112,9 @@
 
   &-down {
     &__inner {
-      gap: 1.625rem;
-      padding-top: 1.2rem;
-      height: 8.3rem;
+      gap: 1.25rem;
+      padding-top: 0.9rem;
+      height: 6.4rem;
       width: var(--container-width);
       max-width: 95%;
       margin: 0 auto;
@@ -125,16 +125,16 @@
     &__nav {
       &-list {
         display: flex;
-        gap: 1.625rem;
+        gap: 1.25rem;
       }
 
       &-item {
-        font-size: 1.3rem;
+        font-size: 1rem;
         line-height: 140%;
         font-weight: 600;
-        border-radius: 8.125rem;
+        border-radius: 6.25rem;
         background: rgb(244, 246, 248);
-        height: 4.5rem;
+        height: 3rem;
         display: flex;
         align-items: center;
         color: rgb(26, 28, 30);
@@ -157,23 +157,23 @@
         }
 
         & a {
-          padding: 0.73rem 1.82rem;
+          padding: 0.562rem 1.4rem;
         }
 
         &_has-children > a {
-          padding-left: 4.5rem;
+          padding-left: 3rem;
           position: relative;
 
           &::before {
             content: '';
             position: absolute;
             background-image: url('/assets/svg/arrow.svg');
-            height: 0.8rem;
-            width: 1.2rem;
+            height: 0.6rem;
+            width: 0.8rem;
+            left: 1.7rem;
             top: 50%;
             transform: translateY(-50%);
             background-size: cover;
-            left: 2.2rem;
             transition: 0.3s;
           }
         }
@@ -186,14 +186,14 @@
       &-dropdown {
         position: absolute;
         top: 100%;
-        padding-top: 0.8rem;
+        padding-top: 0.6rem;
         opacity: 0;
         z-index: 10;
         pointer-events: none;
 
         &-wrapper {
-          padding: 1.1rem 0;
-          min-width: 25rem;
+          padding: 0.8rem 0;
+          min-width: 19rem;
           border-radius: 1.5rem;
           background: var(--white);
           box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.16);
@@ -201,7 +201,7 @@
           & ul li a {
             display: flex;
             align-items: center;
-            padding: 0.73rem 1.82rem;
+            padding: 0.562rem 1.4rem;
             transition: var(--time);
             cursor: pointer;
             white-space: nowrap;
@@ -211,15 +211,15 @@
             }
 
             & img {
-              width: 4rem;
-              min-width: 4rem;
+              width: 3rem;
+              min-width: 3rem;
+              padding-right: 1rem;
               display: inline;
-              padding-right: 1.3rem;
             }
           }
 
           & ul li.header-down__nav-sub-item_has-children a {
-            padding-right: 4.5rem;
+            padding-right: 3.5rem;
           }
         }
       }
@@ -241,12 +241,12 @@
           content: '';
           position: absolute;
           background-image: url('/assets/svg/arrow.svg');
-          height: 0.8rem;
-          width: 1.2rem;
+          height: 0.6rem;
+          width: 0.9rem;
+          right: 1.7rem;
           top: 50%;
           transform: translateY(-50%) rotate(-90deg);
           background-size: cover;
-          right: 2rem;
           transition: 0.3s;
         }
 
@@ -257,14 +257,14 @@
       }
 
       &-sub-item &-dropdown {
-        left: calc(100% - 2.7rem);
+        left: calc(100% - 2rem);
         top: 0;
         z-index: -1;
         height: 100%;
 
         &-wrapper {
           height: 100%;
-          padding-left: 3.3rem;
+          padding-left: 2.5rem;
         }
       }
     }
@@ -277,13 +277,16 @@
 
         &-input {
           width: 100%;
+
           border: 1px solid rgb(228, 230, 232);
-          border-radius: 10rem;
-          height: 4.5rem;
+          border-radius: 6.25rem;
+          height: 3rem;
+          font-size: 1rem;
+          padding: 0.562rem 1.4rem;
+
           font-weight: 500;
-          font-size: 1.3rem;
           line-height: 140%;
-          padding: 0.73rem 1.82rem;
+
 
           &::placeholder {
             color: #929496
@@ -295,156 +298,12 @@
           position: absolute;
           background-image: url('/assets/svg/search.svg');
           display: block;
-          width: 1.3rem;
-          height: 1.4rem;
-          right: 1.5rem;
+          width: 1rem;
+          height: 1.1rem;
+          right: 1.2rem;
           top: 50%;
           transform: translateY(-50%);
           background-size: cover;
-        }
-      }
-    }
-  }
-}
-
-@include breakpoint(lg) {
-  .header {
-    &_hidden {
-      margin-top: -11.9rem;
-    }
-
-    &_scroll {
-      margin-top: -5.51rem;
-    }
-
-    &-up {
-      &__inner {
-        width: var(--container-width-md);
-        height: 5.5rem;
-      }
-
-      &__logo {
-        max-width: 14.5rem;
-      }
-
-      &__contacts {
-        font-size: 1rem;
-        width: 53rem;
-
-        &-items {
-          gap: 3rem;
-        }
-
-        &-item {
-          gap: 1rem;
-
-          &-text {
-            max-width: 13.6rem;
-          }
-        }
-
-        &-button {
-          height: 3rem;
-          gap: 0.6rem;
-        }
-      }
-
-      & svg {
-        width: 1.4rem;
-        height: 1.4rem;
-      }
-    }
-
-    &-down {
-      &__inner {
-        width: var(--container-width-md);
-        gap: 1.25rem;
-        padding-top: 0.9rem;
-        height: 6.4rem;
-      }
-
-      &__nav {
-        &-list {
-          gap: 1.25rem;
-        }
-
-        &-item {
-          font-size: 1rem;
-          height: 3rem;
-          border-radius: 6.25rem;
-
-          & a {
-            padding: 0.562rem 1.4rem;
-          }
-
-          &_has-children > a {
-            padding-left: 3rem;
-
-            &::before {
-              height: 0.6rem;
-              width: 0.8rem;
-              left: 1.7rem;
-            }
-          }
-        }
-
-        &-dropdown {
-          padding-top: 0.6rem;
-
-          &-wrapper {
-            padding: 0.8rem 0;
-            min-width: 19rem;
-            border-radius: 1.5rem;
-
-            & ul li a {
-              padding: 0.562rem 1.4rem;
-
-              & img {
-                width: 3rem;
-                min-width: 3rem;
-                padding-right: 1rem;
-              }
-            }
-
-            & ul li.header-down__nav-sub-item_has-children a {
-              padding-right: 3.5rem;
-            }
-          }
-        }
-
-        &-sub-item {
-          &_has-children > a::after {
-            height: 0.6rem;
-            width: 0.9rem;
-            right: 1.7rem;
-          }
-        }
-
-        &-sub-item &-dropdown {
-          left: calc(100% - 2rem);
-
-          &-wrapper {
-            padding-left: 2.5rem;
-          }
-        }
-      }
-
-      &__search {
-        &-form {
-          &-input {
-            border: 1px solid rgb(228, 230, 232);
-            border-radius: 6.25rem;
-            height: 3rem;
-            font-size: 1rem;
-            padding: 0.562rem 1.4rem;
-          }
-
-          &-submit {
-
-            width: 1rem;
-            height: 1.1rem;
-            right: 1.2rem;
-          }
         }
       }
     }
